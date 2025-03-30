@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Study Room</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Virtual Study Room</h1>
+        <button id="themeToggle">Dark Mode</button>
+    </header>
+    
+    <section id="timer">
+        <h2>Pomodoro Timer</h2>
+        <p id="time">25:00</p>
+        <button id="start">Start</button>
+        <button id="reset">Reset</button>
+    </section>
+    
+    <section id="notes">
+        <h2>Study Notes</h2>
+        <textarea id="noteArea" placeholder="Write your notes here..."></textarea>
+        <button id="saveNote">Save Note</button>
+    </section>
+    
+    <section id="tasks">
+        <h2>Task Manager</h2>
+        <input type="text" id="taskInput" placeholder="Add a new task">
+        <button id="addTask">Add</button>
+        <ul id="taskList"></ul>
+    </section>
+    
+    <section id="music">
+        <h2>Study Music</h2>
+        <audio controls>
+            <source src="study-music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+</body>
+</html>
